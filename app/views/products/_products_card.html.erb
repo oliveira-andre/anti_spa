@@ -1,0 +1,9 @@
+<div id="products_card">
+  <% @products.each do |product| %>
+    <div class="card">
+      <div class="card-content">
+        <%= product.name %>
+      </div>
+    </div>
+  <% end %>
+</div>
