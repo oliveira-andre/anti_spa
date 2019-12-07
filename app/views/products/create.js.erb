@@ -1,0 +1,6 @@
+<% if @error %>
+  $('form').html("<%= j render "form", product: @product %>");
+<% else %>
+  $('form').replaceWith("<%= j link_to t('add'), new_product_path, remote: true, class: 'button is-info', id: :form_button %>")
+  $('#products_card').html("<%= j render 'products_card' %>")
+<% end %>
