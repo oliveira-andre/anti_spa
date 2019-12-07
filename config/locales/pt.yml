@@ -1,0 +1,9 @@
+pt:
+  add: Adicionar
+  save: Salvar
+  products:
+    title: Produtos
+    form:
+      title: Adicionar produto
+      name: Nome
+      price: Preço
