@@ -1,0 +1,22 @@
+@import "bulma/bulma";
+$fa-font-path: "@fortawesome/fontawesome-free/webfonts";
+@import "@fortawesome/fontawesome-free/scss/fontawesome";
+@import "@fortawesome/fontawesome-free/scss/solid";
+
+.card {
+  width: 100%;
+}
+
+span.icon.is-right {
+  display: none;
+}
+
+span.icon.is-right.is-danger {
+  display: flex;
+  color: red;
+}
+
+span.icon.is-right.is-danger:active {
+  display: flex;
+  color: red;
+}
