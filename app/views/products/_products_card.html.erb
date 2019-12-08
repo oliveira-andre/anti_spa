@@ -2,7 +2,18 @@
   <% @products.each do |product| %>
     <div class="card">
       <div class="card-content">
-        <%= product.name %>
+        <p class="title">
+          <%= product.name %>
+        </p>
+        <p class="subtitle">
+          <%= product.price %>
+        </p>
+        <div class="column is-12">
+          <div class="has-text-centered">
+            <%= link_to t('edit'), edit_product_path(product), class: 'button is-info', remote: true %>
+            <%= link_to t('remove'), product_path(product), class: 'button is-danger', method: :delete, remote: true %>
+          </div>
+        </div>
       </div>
     </div>
   <% end %>
