@@ -1,0 +1,7 @@
+<% if @error %>
+  toastr.error("<%= t('cant_destroy') %>")
+<% else %>
+  toastr.success("<%= t('products.form.destroy_success') %>")
+  $('#products_card').html("<%= j render 'products_card' %>")
+  $('#product_table').html("<%= j render 'product_table' %>")
+<% end %>
