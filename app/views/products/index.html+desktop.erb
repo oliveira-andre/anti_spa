@@ -1,1 +1,19 @@
-<p>desktop</p>
+<div class="container">
+  <section class="section">
+    <div class="columns is-mobile is-multiline">
+      <div class="card">
+        <div class="card-content">
+          <div class="column is-12">
+            <%= link_to t('add'), new_product_path, remote: true, class: 'button is-info', id: :form_button %>
+          </div>
+          <div class="column is-12">
+            <%= t('products.title') %>
+          </div>
+          <div id="product_table" class="column is-12">
+            <%= render 'product_table' %>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</div>
