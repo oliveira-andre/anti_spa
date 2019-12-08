@@ -4,7 +4,6 @@ export default class extends Controller {
   blur(e) {
     const input = e.currentTarget
     this.validateField(input)
-    console.log(input.nextElementSibling)
   }
 
   validateField(input) {
