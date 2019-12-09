@@ -1,0 +1,9 @@
+<div class="footer">
+  <div class="tabs is-centered">
+    <ul>
+      <% @footer_buttons.each do |footer_button|%>
+        <%= render 'shared/button', button: footer_button %>
+      <%end %>
+    </ul>
+  </div>
+</div>

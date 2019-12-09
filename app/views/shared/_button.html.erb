@@ -1,0 +1,14 @@
+<li class="tab <%=  'is-active' if button.dig(:link) == request.path %>">
+  <%= link_to button.dig(:link) do %>
+    <div class="columns is-multiline is-gapless has-text-centered">
+      <div class="column is-12">
+        <span class="icon is-small is-size-4">
+          <%= button.dig(:icon).html_safe %>
+        </span>
+      </div>
+      <div class="column is-12">
+        <span><%= button.dig(:description) %></span>
+      </div>
+    </div>
+  <% end %>
+</li>
