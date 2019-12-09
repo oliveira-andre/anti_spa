@@ -15,6 +15,9 @@ pt:
       destroy_success: Produto excluído com sucesso
       create_success: Produto adicionado com sucesso
       update_success: Produto editado com sucesso
+  
+  carts:
+    title: Carrinho
 
   activerecord:
     models:
