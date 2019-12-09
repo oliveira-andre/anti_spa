@@ -1,7 +1,12 @@
 # frozen_string_literal: true
 
 class ApplicationController < ActionController::Base
-  before_action :set_variant
+  include FooterButtons
+  before_action :footer_buttons, :set_variant
+
+  def footer_buttons
+    @footer_buttons = buttons
+  end
 
   private
 
