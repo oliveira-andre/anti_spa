@@ -1,5 +1,6 @@
 pt:
   add: Adicionar
+  add_cart: Adicionao ao carrinho
   save: Salvar
   edit: Editar
   remove: Excluir
@@ -15,6 +16,11 @@ pt:
       destroy_success: Produto excluído com sucesso
       create_success: Produto adicionado com sucesso
       update_success: Produto editado com sucesso
+  
+  cart_products:
+    form:
+      quantity: Quantidade
+      create_success: Produto adicionado ao carrinho com sucesso
   
   carts:
     title: Carrinho
