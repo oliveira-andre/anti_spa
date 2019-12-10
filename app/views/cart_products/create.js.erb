@@ -1,0 +1,5 @@
+<% if @error %>
+  toastr.error("<%= t('cart_products.form.create_error') %>")
+<% else %>
+  toastr.success("<%= t('cart_products.form.create_success') %>")
+<% end %>
